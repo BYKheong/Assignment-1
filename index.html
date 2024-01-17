@@ -5,36 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
-        body
-        {
-            color:#847d3d;
+        body {
+            color: #847d3d;
             background-color: white;
             font-family: 'Courier New', Courier, monospace;
         }
-        p
-        {
+        p {
             font-size: large;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .left-column,
+        .center-column,
+        .right-column {
+            vertical-align: top;
+            width: 33%;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .detail img {
+            border-radius: 50%;
+            height: 200px;
+            width: 215px;
+            margin-right: 10px; /* Adjust this value for the desired space */
+        }
+        .contact {
+            color: aliceblue;
+            padding: 5px; /* Adjust this value for the desired spacing */
+            margin-bottom: 10px; /* Adjust this value for the desired spacing */
+        }
+
+        .contact h1 {
+            margin-bottom: 10px; /* Adjust this value for the desired spacing */
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block; /* Change to 'block' if you want items on separate lines */
+        }
+
+        .contact li {
+            display: inline;
+            margin-right: 10px; /* Adjust this value for the desired spacing between items */
         }
     </style>
 </head>
 <body>    
+    <div class="detail" style="display: flex; justify-content: space-around; background-color: bisque;">
+        <div>
+            <h1>
+                <img src="Image/profile.jpg" style="border-radius: 50%; height: 200px; width: 215px;">
+            </h1>
+        </div>
+        <div>
+            <h1>Kheong Bei Yuan (24)</h1>
+            <p>Currently studying diploma in Computer Engineering at Penang Skill Development Center (PSDC).</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h1 style="background-color: rgb(60, 62, 45);">Contact</h1>
+        <ul style="color: #847d3d;">
+            <li><img src="Image/phone.png" style="height: 25px; width: auto; vertical-align: middle;" alt="">+60 11-1645 1858</li>
+            <li><img src="Image/mail.png" style="height: 25px; width: auto; vertical-align: middle;" alt="">jerrykheong6118@gmail.com</li>
+            <li><img src="Image/location.jpg" style="height: 25px; width: auto; vertical-align: middle;" alt="">Taman Free School, Jelutong</li>
+        </ul>
+    </div>
     <table>
         <tr>
-            <h1 style="background-color: bisque;"><br><img src="Image/profile.jpg" style="border-radius: 50%; height: 200px;width: 215px;"></h1>
-            <h1 >Kheong Bei Yuan (24) 
-                <td>Currently studying diploma in Computer Engineering at Penang Skill Development Center (PSDC). 
-                </td>
-            </h1>
-        </tr>
-        <tr>
-            <td><h1 style="background-color: rgb(60, 62, 45); color: aliceblue;">Contact</h1>
-                <ul><img src="Image/phone.png" style="height: 35px;">  +60 11-1645 1858</ul>
-                <ul><img src="Image/mail.png" style="height: 30px;"> jerrykheong6118@gmail.com</ul>
-                <ul><img src="Image/location.jpg" style="height: 35px;"> Taman Free School, Jelutong</ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
+            <td class="left-column">
                 <h1 style="background-color: rgb(60, 62, 45) ; color: aliceblue;">Language</h1>
                 <ul>
                     <b style="font-size:x-large">Chinese</b>
@@ -49,23 +96,7 @@
                     <p style="font-size:medium">Limited</p>
                 </ul>
             </td>
-        </tr>
-        <tr>
-            <td>
-                <h1 style="background-color: rgb(60, 62, 45); color: aliceblue;">Education</h1>
-                <ul><h2><u>Primary</u></h2>
-                    <li><p><a href="https://sites.google.com/moe-dl.edu.my/sjkcunion"><img src="Image/unon.jpeg" style="height: 35px;"></a> SJK (C) Union</p></li>
-                </ul>
-                <ul><h2><u>Secondary</u></h2>
-                    <li><p><a href="https://www.smjk.edu.my/school/index.php?schid=15"><img src="Image/hengee.jpeg" style="height: 35px;"></a> SMJK Heng Ee High School</p></li>
-                </ul>
-                <ul><h2><u>Tertiery</u></h2>
-                    <li><p><a href="https://www.psdc.org.my/"><img src="Image/psdc.png" style="height: 35px;"></a> Penang Skill Development Center (PSDC)</p></li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
+            <td class="center-column">
                 <h1 style="background-color: rgb(60, 62, 45); color: aliceblue;">Interest</h1>
                 <ul>
                     <li><img src="Image/music.png" style="height: 35px;"> Music</li>
@@ -74,7 +105,21 @@
                     <li><img src="Image/html.png" style="height: 35px;"> HTML</li>
                 </ul>
             </td>
+            <td class="right-column">
+                <h1 style="background-color: rgb(60, 62, 45); color: aliceblue;">Education</h1>
+                <ul><h2><u>Primary</u></h2>
+                    <li><p><a href="https://sites.google.com/moe-dl.edu.my/sjkcunion"><img src="Image/unon.jpeg" style="height: 35px;"></a> SJK (C) Union</p></li>
+                </ul>
+                <ul><h2><u>Secondary</u></h2>
+                    <li><p><a href="https://www.smjk.edu.my/school/index.php?schid=15"><img src="Image/hengee.jpeg" style="height: 35px;"></a> SMJK Heng Ee High School</p></li>
+                </ul>
+                <ul><h2><u>Tertiary</u></h2>
+                    <li><p><a href="https://www.psdc.org.my/"><img src="Image/psdc.png" style="height: 35px;"></a> Penang Skill Development Center (PSDC)</p></li>
+                </ul>
+            </td>
         </tr>
+
+        </div>
     </table>
     <br><br><br>
     <form action="cat.html">Click <label for="cat"><input type="submit" value="here"></label> to go see my cat</form>
