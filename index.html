@@ -4,59 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="/style.css">
     <style>
-        body {
-            color: #847d3d;
-            background-color: white;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        p {
-            font-size: large;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        .left-column,
-        .center-column,
-        .right-column {
-            vertical-align: top;
-            width: 33%;
-        }
-
-        .detail {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .detail img {
-            border-radius: 50%;
-            height: 200px;
-            width: 215px;
-            margin-right: 10px; /* Adjust this value for the desired space */
-        }
-        .contact {
-            color: aliceblue;
-            padding: 5px; /* Adjust this value for the desired spacing */
-            margin-bottom: 10px; /* Adjust this value for the desired spacing */
-        }
-
-        .contact h1 {
-            margin-bottom: 10px; /* Adjust this value for the desired spacing */
-        }
-
-        .contact ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: inline-block; /* Change to 'block' if you want items on separate lines */
-        }
-
-        .contact li {
-            display: inline;
-            margin-right: 10px; /* Adjust this value for the desired spacing between items */
-        }
+        
     </style>
 </head>
 <body>    
@@ -81,7 +31,8 @@
     </div>
     <table>
         <tr>
-            <td class="left-column">
+        <div class="grid-container">
+            <div class="grid-item">
                 <h1 style="background-color: rgb(60, 62, 45) ; color: aliceblue;">Language</h1>
                 <ul>
                     <b style="font-size:x-large">Chinese</b>
@@ -95,8 +46,8 @@
                     <b style="font-size:x-large">Malay</b>
                     <p style="font-size:medium">Limited</p>
                 </ul>
-            </td>
-            <td class="center-column">
+            </div>
+            <div class="grid-item">
                 <h1 style="background-color: rgb(60, 62, 45); color: aliceblue;">Interest</h1>
                 <ul>
                     <li><img src="Image/music.png" style="height: 35px;"> Music</li>
@@ -104,8 +55,8 @@
                     <li><img src="Image/c++.png" style="height: 35px;"> C++ </li>
                     <li><img src="Image/html.png" style="height: 35px;"> HTML</li>
                 </ul>
-            </td>
-            <td class="right-column">
+        </div>
+            <div class="grid-item">
                 <h1 style="background-color: rgb(60, 62, 45); color: aliceblue;">Education</h1>
                 <ul><h2><u>Primary</u></h2>
                     <li><p><a href="https://sites.google.com/moe-dl.edu.my/sjkcunion"><img src="Image/unon.jpeg" style="height: 35px;"></a> SJK (C) Union</p></li>
@@ -116,7 +67,8 @@
                 <ul><h2><u>Tertiary</u></h2>
                     <li><p><a href="https://www.psdc.org.my/"><img src="Image/psdc.png" style="height: 35px;"></a> Penang Skill Development Center (PSDC)</p></li>
                 </ul>
-            </td>
+        </div>
+        </div>
         </tr>
 
         </div>
